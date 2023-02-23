@@ -10,29 +10,27 @@ app.get('/',function(req,res){
     res.sendFile(path.resolve(__dirname,'./views/index.html'))
    })
 
-//Llamado del sv
-app.listen(3030,() =>console.log("Servidor corriendo en puerto 3030"));
-// uso de recursos publicos
+//Llamado del sv con puerto
+const port = process.env.port || 3030;
+app.listen(port,() =>console.log("Servidor corriendo en puerto "+ port));
 
 
-/* LLAMADOS PARA SECCIONES */
+/* -----------------------------LLAMADOS PARA SECCIONES -----------------------------*/
 
+
+/* -------------------------------------------------------------- */
 /* RUTA PARA INGRESAR A SECCION REGISTRO/CREAR CUENTA */
 app.get('/register.html',function(req,res){
     res.sendFile(path.resolve(__dirname , './views/register.html'))
 })
-
-/* BOTON DE VOVLER A PAG, INICIO DE SECCION REGISTRO */
-/* app.get('/index.html',function(req,res){
-    res.sendFile(path.resolve(__dirname , './views/index.html'))
-}) */
-
 /* RUTA PARA INGRESAR A CUENTA */
 
 app.get('/login.html', function(req,res){
     res.sendFile(path.resolve(__dirname, './views/login.html'))
 })
 
+/* -------------------------------------------------------------- */
+/* RUTAS PARA VOLVER AL INICIO DESDE REGISTRO Y LOGIN */
 app.post('/',function(req,res){
     res.sendFile(path.resolve(__dirname , './views/register.html'))
 })

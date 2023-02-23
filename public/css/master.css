@@ -95,10 +95,6 @@ header p{
 } */
 
 
-
-
-
-
 .barra-busqueda{
     background-color: white;
     width: 45%;
@@ -550,6 +546,7 @@ margin-top: 10px;}
     margin-top: 10px;}
 
     .pie1  i:hover{
+        zoom: 1.5;
         color: #EAC926;
     }
 
