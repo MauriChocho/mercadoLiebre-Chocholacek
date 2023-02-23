@@ -1,0 +1,562 @@
+* {
+    font-family: 'Roboto';
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+img {
+    max-width: 100%;
+  }
+
+
+/* 
+Paleta de colores
+Amarillo: #EAC926;
+Azul: #03264C;
+Celeste: #1259c3;
+Gris oscuro: #666;
+Gris claro: #ebebeb;
+Verde: #39b54a; */
+
+                                                    /* FORMULARIO */
+.formulario{
+    padding: 30px  15px 20px 15px;
+    width: 40%;
+    margin-left: 30%;
+    background-color: #ebebeb;
+    
+}
+.controlFormulario{
+    margin-bottom: 15px;   
+}
+.controlFormulario label{
+    margin-bottom: 5px;
+    display: block;
+    text-align: center;
+    font-size: 18px;
+}
+.controlFormulario input{
+    border-radius: 10px;
+}
+.opciones{
+    border-radius: 10px;
+    width: 100%;
+    padding: 8px;
+}
+.fotoUsuario{
+    border: 1.5px solid black;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+.control{
+    width: 100%;
+    padding: 8px;
+}
+.botones{
+    text-align: center;
+}
+.botonFormulario{
+    background-color: #1259c3;
+    color: whitesmoke;
+    border-radius: 5px;
+    padding: 10px;
+    font-size: 20px;
+    margin: 20px;
+}
+.botones :hover .botonFormulario {
+    background-color: #0022AA;
+}
+a .botonFormulario {
+    color: white;
+    list-style: none;
+    text-decoration: none;
+}
+
+
+
+                                                /* FIN DEL FORMULARIO */
+
+header{
+    background-color: #EAC926;
+}
+.header .logo{
+    width: 50%;
+}
+header p{
+    text-align: center;
+    margin: 20px auto;
+}
+/* header .buscador{
+    width: 50%;
+    padding: 5px 10px;
+    border-radius: 5px;
+    color: #666;
+} */
+
+
+
+
+
+
+.barra-busqueda{
+    background-color: white;
+    width: 45%;
+    align-self: center;
+    display: flex;
+    border-radius: 4px;
+}
+
+.barra-busqueda form{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    margin: 0.5rem;
+}
+
+.campo-busqueda{
+    width: 100%;
+    display: inline;
+}
+
+.campo-busqueda input{
+    width: 100%
+}
+
+.lupa{
+    background-color: white;
+    justify-self: flex-end;
+    display: inline;
+}
+
+  button, input {
+    border: none;
+  }
+
+
+nav ul li{
+    text-decoration: none;
+    list-style: none;
+}
+.banner{
+    width: 100%;
+}
+main {
+    background-color: #ebebeb;  
+}
+
+.home .titulares{
+text-align: left;
+}
+main .vistos{
+    text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 100%;
+    position: relative;
+}
+main .ofertas {
+    text-align: center;
+}
+main h2{
+    margin: 0;
+    padding-bottom: 10px;
+}
+.burger-menu{
+    display: none;
+}
+.burger-menu a{
+    text-decoration: none;
+    list-style: none;
+    color: black;
+}
+article{
+   
+    background-color: white;
+    margin: 10px;
+    padding: 2.5rem;
+}
+
+.articulo {
+    text-align: start;
+    margin-bottom: 10px;
+    padding: 15px;
+}
+.articulo ul li{
+    list-style: none;
+    text-decoration: none;
+}
+.articulo i{
+    color:#39b54a;
+    padding: 5px;
+    border: 1px solid #39b54a;
+    border-radius: 15px;
+}
+.articulo .descuento{
+    color:#39b54a;
+}
+.articulo .descripcion{
+    display: none;
+}
+
+.precios {
+    font-size: 18px;
+}
+
+.descuentos {
+    font-size: 16px;
+}
+
+.descripcion {
+    font-size: 16px;
+}
+
+.titulares {
+    font-size: 24px;
+    color: #666;
+}
+
+.pie {
+    text-align: center;
+}
+.pie1{
+    margin-bottom: 10px;
+   
+}
+.pie1 i{
+width: 3rem;
+color:#1259c3;
+margin-top: 10px;}
+
+.iconoBurger{
+    color: white;
+    background-color:#1259c3;
+    font-size: 30px;
+    padding: 5px;
+    border-radius: 5px;
+    margin: auto 45.5%;
+    display: block;
+   
+}
+@media(max-width:360px){
+     .header{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+    .home {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        max-width: 100%;
+    } 
+    .home .vistos{
+        width: 100%;
+    }
+    
+    .home .vistos article{
+        max-width: 100%;
+    } 
+}
+
+/* MOBILE FIRST RESPONSIVE */
+@media(min-width:361px){
+    
+    article{
+       box-shadow: 0px 0px 10px rgb(100,100,100);
+       border-bottom: solid 1px #d6d5d5;
+       padding: 15px;
+    }
+    
+    
+      /*
+        background-image: none;
+        background-color: transparent;
+        -webkit-box-shadow: none;
+        -moz-box-shadow: none;
+        box-shadow: none;
+        outline: none;
+        color: black;
+    } */
+  
+
+
+
+
+
+
+    .burger-menu{
+        display: block;
+        margin-bottom: 0px;
+    }
+   
+    header .iconoBurger{
+        display:none;
+    }
+
+    .home {
+        margin-top: 0px;
+    }
+    .home h2{
+        margin-left: 40px;
+    }
+    .home .vistos{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+    .home .vistos article{
+        width: 100%;
+    }
+    .home .visto article .articulo .iconoEnvio{
+        display:block;
+        font-size: 16px;
+        padding: 5px;
+        width: 30px;
+        height: 30px;
+        border: 1px solid #39b54a;
+        background-color: #FFF;
+        border-radius: 50%;
+        position:absolute;
+        right: 2px;
+
+}
+.articulo .precio{
+  
+   flex-wrap: wrap;
+    width: 30%;
+}
+.articulo .descuento{
+   
+    width: 70%;
+}
+.articulo .descripcion{
+    display:block;
+}
+
+}
+
+/* TABLET RESPONSIVE */
+@media(min-width:460px){
+    .header{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content:space-between;
+        align-items: center;
+        margin-bottom: 30px;
+    }
+    .header .buscador{
+        width: 5%;
+        padding: 5px 5px 0px 5px;
+        border-radius: 5px;
+        color: #666;
+    }
+    .header .logo{
+        width: 25%;
+    }   
+    .header p{
+        width: 15%;
+        text-align: center;
+        margin: 20px 5px;
+        font-size: 15px;
+    }
+
+    .barraNav {
+        display: flex;
+        flex-wrap: wrap;  
+        justify-content: space-between;
+        margin-top: 20px;
+        padding-bottom: 10px;
+        
+    }
+    .barraNav ul li {
+        padding: 10px;
+        font-size: 10px;
+    }
+    .burger-menu .barraNav .ulIzq{
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: flex-start;
+            margin-right: 10px;
+            font-size: 18px;
+            padding: 5px;
+            align-items: center;
+    }
+    .barraNav .ulDer{   
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: flex-end;
+        margin-left: 5px;
+        font-size: 18px;
+        padding: 5px;
+        align-items: center;
+}
+
+.home .vistos{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.home .vistos article{
+    width: 45%;
+    position: relative;
+
+}
+.home .ofertas{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.home .ofertas article{
+    position: relative;
+    width: 45%;
+}
+
+.vistos .articulo{
+    display: flex;
+    flex-wrap: wrap;   
+}
+ 
+
+.vistos .articulo .producto{
+    display: flex;
+    flex-wrap: nowrap;
+}
+ article .descripcion{
+    visibility: hidden;
+}
+ article :hover .descripcion{
+    visibility:visible;
+    font-size: large;
+}
+
+
+ .articulo .iconoEnvio{
+    display: flex;
+    flex-wrap: wrap; 
+    position: absolute;
+    right: 20px;
+    transition: 2s; 
+}
+.articulo .iconoEnvio:hover{
+    
+    transform: rotate(-90deg); 
+}
+
+
+.articulo .precio{
+    padding-top: 40px;
+     width: 20%;
+ }
+ .articulo .descuento{
+    
+     width: 60%;
+ }
+ 
+
+
+}
+
+
+/* RESPONSIVE DESKTOP */
+
+@media(min-width:769px){
+    .header{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        align-items: center;
+    }
+    .header .barra-busqueda{
+        width: 33%;
+        padding: 5px 10px;
+        border-radius: 5px;
+        color: #666;
+        margin-left: 40px;
+    }
+    .header .logo{
+        width: 25%;
+    }   
+    .header p{
+        width: 33%;
+        text-align: center;
+        font-size: 18px;
+        margin: 20px auto;
+    }
+
+    .barraNav ul {
+        display: flex;
+        flex-wrap: wrap;  
+        justify-content: space-evenly;
+    }
+    .barraNav ul li {
+        font-size: 20px;
+    }
+    .ulIzq{
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: flex-start;
+            margin-right: 50px;
+            padding: 5px;
+            align-items: center;
+    }
+    .ulDer{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: flex-end;
+        margin-left: 30px;
+        padding: 5px;
+        align-items: center;
+}
+
+.home .vistos article{
+    width: 20%;
+}
+.home .ofertas article{
+    width: 20%;
+    margin-bottom: 30px;
+}
+
+.pie{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    
+    margin: 40px;
+}
+.pie1{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    width: 28%;
+    text-align: baseline;
+    align-content: center;
+    align-items: center;
+}
+.pie1 h3{
+    font-size: 20px;
+}
+.pie1 p{
+    font-size: 16px;
+    margin-top: 7px;
+}
+.pie2  p .copyrigth{
+    align-content: start;
+    text-align: left;
+}
+.pie1 i{
+    font-size: 22px;
+    margin-top: 10px;}
+
+    .pie1  i:hover{
+        color: #EAC926;
+    }
+
+
+
+   
+}
+
+
+
